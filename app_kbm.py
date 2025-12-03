@@ -51,18 +51,60 @@ list_bulan = {
     "juli": 7, "agustus": 8, "september": 9, "oktober": 10, "november": 11, "desember": 12
 }
 all_cabang_dict = {
-    "BMS": "BANJARMASIN", "BPN": "BALIKPAPAN", "BTM": "BATAM", "MKS": "MAKASSAR", "MDN": "MEDAN",
-    "PKB": "PEKANBARU", "SMD": "SAMARINDA", "SRG": "SORONG", "TRK": "TARAKAN", "MKW": "MANOKWARI",
-    "MRK": "MERAUKE", "BTJ": "BATULICIN", "BUW": "BAU - BAU", "BER": "BERAU", "BIK": "BIAK",
-    "BIT": "BITUNG", "FAK": "FAK - FAK", "KTG": "KETAPANG", "KNG": "KAIMANA", "NBI": "NABIRE",
-    "NNK": "NUNUKAN", "SPT": "SAMPIT", "SRI": "SERUI", "TRT": "TERNATE", "TMK": "TIMIKA",
-    "TUA": "TUAL", "PNK": "PONTIANAK", "PBG": "PALEMBANG", "AMB": "AMBON", "GOR": "GORONTALO",
-    "PALU": "PALU", "PDG": "PADANG", "KDI": "KENDARI", "SMG": "SEMARANG", "BKU": "BUNGKU",
-    "SBY": "SURABAYA"
-}
-list_port_full = ["BMS","MKS","MDN","PKB","SMD","SRG","TRK","MRK","BTJ","BER","BIT","SPT","AMB","GOR","PALU", "SBY"]
-list_cy_full = ["BPN","BTM","MKW","BUW","BIK","FAK","KTG","KNG","NBI","NNK","SRI","TRT","TMK","TUA","PNK","PBG","PDG","KDI","SMG","BKU"]
+    # CY
+    "BAU": "BAU - BAU",
+    "BIA": "BIAK",
+    "BOE": "BOEPINANG",
+    "BTM": "BATAM",
+    "DBO": "DOBO",
+    "FAK": "FAK - FAK",
+    "KAI": "KAIMANA",
+    "KDR": "KENDARI",
+    "KTG": "KETAPANG",
+    "LUW": "LUWUK",
+    "MRI": "MANOKWARI",
+    "NBR": "NABIRE",
+    "NNK": "NUNUKAN",
+    "PDG": "PADANG",
+    "PNK": "PONTIANAK",
+    "SMG": "SEMARANG",
+    "SRI": "SERUI",
+    "TGK": "TANGKIANG",
+    "TIM": "TIMIKA",
+    "TUA": "TUAL",
+    "TTE": "TERNATE",
 
+    # PORT
+    "AMB": "AMBON",
+    "ARA": "SERANG",
+    "BIT": "BITUNG",
+    "BLC": "BATULICIN",
+    "BLW": "BELAWAN",
+    "BMS": "BANJARMASIN",
+    "BPN": "BALIKPAPAN",
+    "BRU": "BERAU",
+    "BTJ": "MEDAN",
+    "BTN": "BUATAN",
+    "GTO": "GORONTALO",
+    "JYP": "JAYAPURA",
+    "KTJ": "KUALATANJUNG",
+    "MAL": "MALUKU",
+    "MKE": "MERAUKE",
+    "MKS": "MAKASSAR",
+    "PAL": "PALU",
+    "PKB": "PEKANBARU",
+    "PLM": "PEKANBARU",     # sesuai tabel Anda
+    "PRW": "PERAWANG",
+    "SBY": "SURABAYA",      # tabel #N/A → saya isi jelas
+    "SDA": "SAMARINDA",
+    "SMD": "SAMARINDA",
+    "SPT": "SAMPIT",
+    "SRG": "SORONG",
+    "TRK": "TARAKAN"
+}
+
+list_cy_full = ["BAU","BIA","BOE","BTM","DBO","FAK","KAI","KDR","KTG","LUW","MRI","NBR","NNK","PDG","PNK","SMG","SRI","TGK","TIM","TUA"]
+list_port_full = ["AMB","ARA","BIT","BLC","BLW","BMS","BPN","BRU","BTJ","BTN","GTO","JYP","KTJ","MAL","MKE","MKS","PAL","PKB","PLM","PRW,"SDA","SMD","SPT","SRG","TRK"]
 
 # Pindahkan logika utama ke dalam fungsi agar dapat dipanggil oleh tombol
 def run_processing(uploaded_file, input_bulan, input_tahun, selected_cabang, list_bulan, all_cabang_dict, list_port_full, list_cy_full):
